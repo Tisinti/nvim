@@ -24,3 +24,5 @@ require("lazy").setup("plugins", {
 		notify = false, -- turn off notifications whenever plugin changes are made
 	},
 })
+
+vim.cmd("colorscheme dracula")
