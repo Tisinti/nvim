@@ -12,7 +12,7 @@ Plugins included:
 * blankline - https://github.com/lukas-reineke/indent-blankline.nvim
 * bufferline - https://github.com/akinsho/bufferline.nvim
 * colorizer - https://github.com/norcalli/nvim-colorizer.lua
-* colorscheme - https://github.com/rebelot/kanagawa.nvim
+* colorscheme - https://github.com/Mofiqul/dracula.nvim 
 * lualine - https://github.com/nvim-lualine/lualine.nvim
 * markdown-preview - https://github.com/iamcco/markdown-preview.nvim
 * oil.lua - https://github.com/stevearc/oil.nvim
