@@ -25,4 +25,6 @@ require("lazy").setup("plugins", {
 	},
 })
 
+require("configs.lspconfig")
+
 vim.cmd("colorscheme dracula")
