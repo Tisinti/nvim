@@ -54,4 +54,4 @@ keymap.set("n", "<leader>g", ":vertical Git <cr>", opts)
 keymap.set("n", "<leader>md", ":MarkdownPreviewToggle<cr>", opts)
 
 -- Neotree Preview
-keymap.set("n", "<C-t>", ":Neotree<cr>", opts)
+keymap.set("n", "<C-n>", ":Neotree<cr>", opts)
