@@ -1,8 +1,8 @@
-
 local opt = vim.opt
 
 -- global statusline
 opt.laststatus = 3
+
 
 -- fat cursor
 opt.guicursor = ""
