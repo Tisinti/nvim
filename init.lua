@@ -29,4 +29,5 @@ require("configs.cmpconfig")
 require("configs.texconfig")
 require("configs.lspconfig")
 
+
 vim.cmd("colorscheme dracula")
