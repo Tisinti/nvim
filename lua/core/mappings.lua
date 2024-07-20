@@ -3,8 +3,15 @@ vim.g.mapleader = " "
 local keymap = vim.keymap
 local opts = { silent = true, noremap = true }
 
+--Remap Escape Key
+
+keymap.set("i", "jk", "<esc>", opts)
+keymap.set("v", "jk", "<esc>", opts)
+keymap.set("c", "jk", "<esc>", opts)
+
+
 -- General
---  e keymap.set("n", "<leader>q", ":qa! <cr>", opts)
+keymap.set("n", "<leader>q", ":qa! <cr>", opts)
 keymap.set("n", "<leader>a", "gg<S-v>G", opts)
 keymap.set("v", "<", "<gv", opts)
 keymap.set("v", ">", ">gv", opts)
