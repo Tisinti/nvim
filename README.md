@@ -6,21 +6,28 @@ The debian package included in this repo will install v0.10.0.
 
 The nvim configuration files are within the nvim directory.
 
-Plugins included:
+I adepted the plugins for python development and academic use.  
+**Plugins included:**
 
-* alpha - https://github.com/goolord/alpha-nvim
-* blankline - https://github.com/lukas-reineke/indent-blankline.nvim
-* bufferline - https://github.com/akinsho/bufferline.nvim
-* colorizer - https://github.com/norcalli/nvim-colorizer.lua
-* colorscheme - https://github.com/Mofiqul/dracula.nvim 
-* lualine - https://github.com/nvim-lualine/lualine.nvim
-* markdown-preview - https://github.com/iamcco/markdown-preview.nvim
-* oil.lua - https://github.com/stevearc/oil.nvim
-* telescope - https://github.com/nvim-telescope/telescope.nvim
-* transparent - https://github.com/xiyaowong/transparent.nvim
-* treesitter - https://github.com/nvim-treesitter/nvim-treesitter
-* vim-fugitive - https://github.com/tpope/vim-fugitive
-
+* alpha: startpage - https://github.com/goolord/alpha-nvim
+* blankline: indentaton - https://github.com/lukas-reineke/indent-blankline.nvim
+* bufferline:(not working rn) show open buffers - https://github.com/akinsho/bufferline.nvim
+* cmp: autocompletion - https://github.com/hrsh7th/nvim-cmp
+* colorscheme: dracula - https://github.com/Mofiqul/dracula.nvim 
+* debugger: with ui and python: https://github.com/mfussenegger/nvim-dap
+* lualine: info bar at bottom - https://github.com/nvim-lualine/lualine.nvim
+* luasnip: snippets - https://github.com/L3MON4D3/LuaSnip
+* markdown-preview: what it says - https://github.com/iamcco/markdown-preview.nvim
+* oil.lua: file explorer - https://github.com/stevearc/oil.nvim
+* telescope: file finder - https://github.com/nvim-telescope/telescope.nvim
+* transparent: background - https://github.com/xiyaowong/transparent.nvim
+* treesitter: syntax highlighting - https://github.com/nvim-treesitter/nvim-treesitter
+* vim-fugitive: git wrapper - https://github.com/tpope/vim-fugitive
+* mason: lsp plugin manager - https://github.com/williamboman/mason.nvim
+* venv-selector: find virtual enviroments - https://github.com/linux-cultist/venv-selector.nvim
+* vimtex: latex support for vim - https://github.com/lervag/vimtex
+* neotree: tree struct navigation - https://github.com/nvim-neo-tree/neo-tree.nvim
+* none-ls: autoformatting etc. - https://github.com/nvimtools/none-ls.nvim
 
 # Neovim Installation
 
@@ -38,28 +45,15 @@ mv ~/.local/state/nvim{,.bak}
 mv ~/.cache/nvim{,.bak}
 ```
 
-* Clone the justaguylinux nvim packages
-
-```
-git clone https://github.com/drewgrif/nvim
-```
-
-* Remove the .git folder, so you can add it to your own repo later
-
-```
-rm -rf ~/.config/nvim/.git
-```
-
 ### Installing neovim from this github
 
 ```
 sudo apt install ~/.config/nvim/nvim-linux64.deb
 ```
 
-NOTE:  You may have to UPDATE the Lazy
+NOTE:  You may have to UPDATE Lazy
 
 * After installing and running neovim
 * Type ```:Lazy``` to access the LazyVim menu.  
 * Type "U" to update.
 
-![2024-07-12_12-16](https://github.com/user-attachments/assets/c77446d4-e3bf-44e9-a7fc-5e4a6d99b4af)

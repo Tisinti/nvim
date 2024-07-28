@@ -25,6 +25,8 @@ require("lazy").setup("plugins", {
 	},
 })
 
+-- Setup configs
+require("ibl").setup()
 require("configs.cmpconfig")
 require("configs.texconfig")
 require("configs.lspconfig")
