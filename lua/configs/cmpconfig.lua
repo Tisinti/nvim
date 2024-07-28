@@ -36,6 +36,14 @@ sources = cmp.config.sources({
 })
 })
 require("cmp_git").setup() ]]--
+local signature_config = {
+  debug = true,
+  hint_enable = false,
+  handler_opts = { border = "single" },
+  max_width = 80,
+}
+
+require("lsp_signature").setup(signature_config)
 
 -- setup cmp for autopairs
 require("nvim-autopairs").setup()

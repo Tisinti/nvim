@@ -3,6 +3,10 @@ vim.g.mapleader = " "
 local keymap = vim.keymap
 local opts = { silent = true, noremap = true }
 
+-- Debugger
+keymap.set("n", "<leader>db", "<cmd> DapToggleBreakpoint <cr>", opts)
+keymap.set("n", "<leader>dpr", function() require('dap-python').test_method() end, opts)
+
 --Remap Escape Key
 
 keymap.set("i", "jk", "<esc>", opts)

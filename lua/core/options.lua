@@ -33,7 +33,7 @@ opt.ignorecase = true
 opt.smartcase = true
 
 -- disable mouse
-opt.mouse = ""
+opt.mouse = "a"
 
 -- numberline
 opt.number = true
