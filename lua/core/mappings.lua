@@ -3,6 +3,9 @@ vim.g.mapleader = " "
 local keymap = vim.keymap
 local opts = { silent = true, noremap = true }
 
+-- Tests
+keymap.set("n", "<leader>tn", function () require("neotest").run.run() end, opts)
+
 -- Debugger
 keymap.set("n", "<leader>db", "<cmd> DapToggleBreakpoint <cr>", opts)
 keymap.set("n", "<leader>dpr", function() require('dap-python').test_method() end, opts)
