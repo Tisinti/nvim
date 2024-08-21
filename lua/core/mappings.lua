@@ -5,6 +5,7 @@ local opts = { silent = true, noremap = true }
 
 -- Tests
 keymap.set("n", "<leader>tn", function () require("neotest").run.run() end, opts)
+keymap.set("n", "<leader>td", function () require("neotest").run.run({strategy = "dap"}) end, opts)
 
 -- Debugger
 keymap.set("n", "<leader>db", "<cmd> DapToggleBreakpoint <cr>", opts)
