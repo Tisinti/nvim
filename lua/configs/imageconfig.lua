@@ -1,5 +1,10 @@
 local img = require'image'
 
+-- Requires föllowing deps:
+-- ImageMagick - see Installing ImageMagick
+-- magick LuaRock
+-- make sure to enable passthrough in tmux
+
 img.setup(
 {
   backend = "kitty",
