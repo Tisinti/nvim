@@ -1,4 +1,3 @@
----@diagnostic disable: undefined-field
 -- These modules are not loaded by lazy
 require("core.options")
 require("core.mappings")
@@ -28,6 +27,7 @@ require("lazy").setup("plugins", {
 -- Setup configs
 require("ibl").setup()
 require("configs.neotestconfig")
+require("configs.imageconfig")
 require("configs.cmpconfig")
 require("configs.texconfig")
 require("configs.lspconfig")

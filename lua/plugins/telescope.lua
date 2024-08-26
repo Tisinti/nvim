@@ -6,7 +6,7 @@ return {
 	opts = function()
 		return {
 			defaults = {
-				preview = false,
+				preview = true,
 				vimgrep_arguments = {
 					"rg",
 					"-L",
