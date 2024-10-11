@@ -47,6 +47,18 @@ lspconfig.lua_ls.setup({
     filetypes = {"lua"},
 })
 
+lspconfig.html.setup({
+    on_attach = on_attach,
+    capabilities = capabilities,
+    filetypes = {"html", "css"},
+})
+
+lspconfig.yamlls.setup({
+    on_attach = on_attach,
+    capabilities = capabilities,
+    filetypes = {"yaml"},
+})
+
 vim.diagnostic.config({
   virtual_text = false
 })
