@@ -33,9 +33,21 @@ lspconfig.pyright.setup({
     on_attach = on_attach,
     capabilities = capabilities,
     filetypes = {"python"},
+    settings = {
+        pyright = {
+          -- Using Ruff's import organizer
+          disableOrganizeImports = true,
+        },
+        python = {
+          analysis = {
+            -- Ignore all files for analysis to exclusively use Ruff for linting
+            ignore = { '*' },
+          },
+        },
+      },
 })
 
-lspconfig.ruff_lsp.setup({
+lspconfig.ruff.setup({
     on_attach = on_attach,
     capabilities = capabilities,
     filetypes = {"python"},
