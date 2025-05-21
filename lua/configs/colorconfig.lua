@@ -42,7 +42,8 @@ require("catppuccin").setup({
     gitsigns = true,
     nvimtree = true,
     treesitter = true,
-    notify = false,
+    notify = true,
+    noice = true,
     mini = {
       enabled = true,
       indentscope_color = "",

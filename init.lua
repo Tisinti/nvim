@@ -32,6 +32,6 @@ require("configs.texconfig")
 require("configs.lspconfig")
 require("configs.formatterconfig")
 require("configs.colorconfig")
-
+require("configs.noiceconfig")
 
 vim.cmd("colorscheme catppuccin-macchiato")
